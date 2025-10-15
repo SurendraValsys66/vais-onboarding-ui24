@@ -302,7 +302,7 @@ export default function OnboardingRole() {
             <Button
               onClick={onContinue}
               disabled={answered < total}
-              className="bg-valasys-blue hover:bg-blue-600 text-white"
+              className="bg-valasys-blue hover:bg-valasys-blue/90 text-white"
             >
               Continue to Dashboard →
             </Button>
