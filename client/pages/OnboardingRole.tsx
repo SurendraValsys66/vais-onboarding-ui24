@@ -162,7 +162,7 @@ export default function OnboardingRole() {
               Welcome to VAIS
             </div>
             <StepProgress
-              current={Math.min(total, Math.max(1, answered || 1))}
+              current={answered >= total ? total : Math.max(1, answered + 1)}
               total={total}
               title="Tell us about you"
               subtitle="Answer 5 quick questions — you can change these later."
