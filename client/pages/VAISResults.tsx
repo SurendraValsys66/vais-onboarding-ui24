@@ -66,6 +66,7 @@ import {
   ExternalLink,
   Lock,
   ArrowUp,
+  Info,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { markStepCompleted } from "@/lib/masteryStorage";
