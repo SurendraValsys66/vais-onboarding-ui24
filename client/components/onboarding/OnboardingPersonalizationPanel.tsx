@@ -105,9 +105,9 @@ export default function OnboardingPersonalizationPanel({
       </div>
 
       {/* Tip */}
-      <div className="mt-4 pt-4 border-t border-valasys-orange/10">
-        <p className="text-xs text-valasys-gray-600">
-          💡 You can change these later in Settings.
+      <div className="mt-4 pt-4 border-t border-valasys-gray-200">
+        <p className="text-xs text-valasys-gray-500 leading-relaxed">
+          Pro tip: You can change these later in Settings.
         </p>
       </div>
     </div>
