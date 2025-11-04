@@ -50,8 +50,8 @@ function PillOption({
       className={cn(
         "inline-flex items-center gap-2 rounded-full border px-3 py-1.5 cursor-pointer transition-colors text-sm",
         selected
-          ? "border-valasys-blue bg-valasys-blue/10 text-valasys-blue"
-          : "border-valasys-gray-200 hover:border-valasys-blue/60 text-valasys-gray-800",
+          ? "border-valasys-orange bg-valasys-orange/10 text-valasys-orange"
+          : "border-valasys-gray-200 hover:border-valasys-orange/60 text-valasys-gray-800",
       )}
     >
       {children}
