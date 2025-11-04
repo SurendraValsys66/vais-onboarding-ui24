@@ -22,10 +22,10 @@ export default function OnboardingPersonalizationPanel({
 
   return (
     <div className="rounded-xl border border-valasys-orange/20 bg-valasys-orange/5 p-5">
-      <div className="flex items-start gap-3 mb-5">
+      <div className="flex items-center gap-4 mb-6">
         {/* Circular Progress Indicator */}
-        <div className="relative flex-shrink-0 w-16 h-16">
-          <svg className="w-full h-full" viewBox="0 0 80 80">
+        <div className="relative flex-shrink-0">
+          <svg className="w-20 h-20" viewBox="0 0 80 80">
             {/* Background circle */}
             <circle
               cx="40"
@@ -33,7 +33,7 @@ export default function OnboardingPersonalizationPanel({
               r="36"
               fill="none"
               stroke="#f3f4f6"
-              strokeWidth="2"
+              strokeWidth="3"
             />
             {/* Progress circle */}
             <circle
@@ -42,7 +42,7 @@ export default function OnboardingPersonalizationPanel({
               r="36"
               fill="none"
               stroke="#ff6b35"
-              strokeWidth="2"
+              strokeWidth="3"
               strokeDasharray={`${(percentage / 100) * 226.2} 226.2`}
               strokeLinecap="round"
               className="transform -rotate-90 origin-center transition-all duration-500"
@@ -50,7 +50,7 @@ export default function OnboardingPersonalizationPanel({
           </svg>
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="text-center">
-              <div className="text-xs font-semibold text-valasys-gray-900">
+              <div className="text-sm font-bold text-valasys-gray-900">
                 {percentage}%
               </div>
             </div>
