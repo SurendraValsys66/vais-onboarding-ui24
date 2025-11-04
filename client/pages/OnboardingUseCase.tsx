@@ -12,8 +12,7 @@ import {
 import { useNavigate } from "react-router-dom";
 import { ListChecks, Rocket, Database } from "lucide-react";
 import { motion } from "framer-motion";
-import OnboardingSplitLayout from "@/components/onboarding/OnboardingSplitLayout";
-import OnboardingIllustration from "@/components/onboarding/OnboardingIllustration";
+import OnboardingVideoLayout from "@/components/onboarding/OnboardingVideoLayout";
 
 const OPTIONS = [
   { label: "Build accounts/prospects list", icon: ListChecks },
@@ -23,8 +22,8 @@ const OPTIONS = [
 
 export default function OnboardingUseCase() {
   const navigate = useNavigate();
-  const initial = getOnboarding().useCase ?? "";
-  const [value, setValue] = useState<string>(initial);
+  const initial = getOnboarding();
+  const [value, setValue] = useState<string>(initial.useCase ?? "");
 
   const onNext = () => {
     if (!value) return;
@@ -44,10 +43,12 @@ export default function OnboardingUseCase() {
   };
 
   return (
-    <OnboardingSplitLayout
+    <OnboardingVideoLayout
       logoSrc="https://cdn.builder.io/api/v1/image/assets%2Ff2a051d62a994479965d33c6eada9792%2F9b770886bd6142129584a6e279795c21?format=webp&width=800"
-      left={
-        <div className="space-y-8 mx-auto">
+      summaryValues={initial}
+      summaryTotal={6}
+      content={
+        <div className="space-y-8">
           <div>
             <div className="text-sm font-medium text-valasys-gray-700">
               Getting to know you
@@ -105,17 +106,10 @@ export default function OnboardingUseCase() {
               disabled={!value}
               className="bg-valasys-orange hover:bg-valasys-orange-light text-white"
             >
-              Continue
+              Continue →
             </Button>
           </div>
         </div>
-      }
-      right={
-        <OnboardingIllustration
-          variant="usecase"
-          imageSrc="https://cdn.builder.io/api/v1/image/assets%2Ff2a051d62a994479965d33c6eada9792%2Fdd5060e416d64ccea76a3915edd085f1?format=webp&width=800"
-          imageAlt="Dashboard preview"
-        />
       }
     />
   );
