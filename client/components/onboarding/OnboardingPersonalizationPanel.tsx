@@ -5,9 +5,11 @@ import { SummaryValues } from "./OnboardingSummaryPanel";
 export default function OnboardingPersonalizationPanel({
   values,
   total,
+  currentStep,
 }: {
   values: SummaryValues;
   total: number;
+  currentStep: number;
 }) {
   const groups: { key: keyof SummaryValues; label: string }[] = [
     { key: "role", label: "Role" },
@@ -17,13 +19,12 @@ export default function OnboardingPersonalizationPanel({
     { key: "vaisCategory", label: "Product Category" },
   ];
 
-  const answered = Object.values(values).filter(Boolean).length;
   const percentage =
-    answered === groups.length
+    currentStep === total
       ? 100
       : Math.min(
           100,
-          Math.max(0, Math.round(((answered - 1) / total) * 100)),
+          Math.max(0, Math.round(((currentStep - 1) / total) * 100)),
         );
 
   return (
