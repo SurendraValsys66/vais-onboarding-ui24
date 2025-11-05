@@ -114,7 +114,7 @@ export default function OnboardingRole() {
             ))}
           </RadioGroup>
 
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 pt-2">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 pt-4">
             <button
               type="button"
               onClick={onSkip}
