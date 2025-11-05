@@ -17,6 +17,9 @@ export default function OnboardingPersonalizationPanel({
     { key: "vaisCategory", label: "Product Category" },
   ];
 
+  const answered = Object.values(values).filter(Boolean).length;
+  const percentage = Math.round((answered / groups.length) * 100);
+
   return (
     <div className="rounded-xl border border-valasys-orange/20 bg-valasys-orange/5 p-5">
       <div className="flex items-center gap-4 mb-6">
