@@ -84,7 +84,7 @@ export default function OnboardingRole() {
               setRole(v);
               if (v) saveOnboarding({ role: v });
             }}
-            className="space-y-3"
+            className="grid grid-cols-2 md:grid-cols-4 gap-3"
           >
             {ROLES.map((r) => (
               <motion.div
@@ -94,19 +94,19 @@ export default function OnboardingRole() {
               >
                 <Label
                   htmlFor={`role-${r.label}`}
-                  className={`flex items-center gap-3 rounded-lg border-2 p-4 cursor-pointer transition-all ${
+                  className={`flex flex-col items-center gap-2 rounded-lg border-2 p-3 cursor-pointer transition-all ${
                     role === r.label
-                      ? "border-valasys-blue bg-valasys-blue/10 text-valasys-blue"
-                      : "border-valasys-gray-200 hover:border-valasys-blue/40"
+                      ? "border-valasys-orange bg-valasys-orange/10 text-valasys-orange"
+                      : "border-valasys-gray-200 hover:border-valasys-orange/40"
                   }`}
                 >
                   <RadioGroupItem
                     id={`role-${r.label}`}
                     value={r.label}
-                    className="h-5 w-5"
+                    className="sr-only"
                   />
-                  <r.icon className="h-5 w-5 text-valasys-blue flex-shrink-0" />
-                  <span className="text-sm font-medium text-valasys-gray-900">
+                  <r.icon className="h-5 w-5 text-valasys-orange flex-shrink-0" />
+                  <span className="text-xs font-medium text-center text-valasys-gray-900">
                     {r.label}
                   </span>
                 </Label>
