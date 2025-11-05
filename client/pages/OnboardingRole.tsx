@@ -124,7 +124,7 @@ export default function OnboardingRole() {
             <Button
               onClick={onNext}
               disabled={!role}
-              className="bg-valasys-blue hover:bg-valasys-blue/90 text-white"
+              className="bg-valasys-orange hover:bg-valasys-orange-light text-white"
             >
               Continue →
             </Button>
