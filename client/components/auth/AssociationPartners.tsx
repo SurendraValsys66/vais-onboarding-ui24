@@ -35,34 +35,59 @@ const partners: PartnerItem[] = [
 ];
 
 export default function AssociationPartners() {
+  const associationPartners = partners.slice(0, 2);
+  const isoCertifications = partners.slice(2);
+
+  const PartnerBox = ({ p }: { p: PartnerItem }) => (
+    <div
+      key={p.name}
+      className="bg-white/90 rounded-2xl p-5 text-center hover:bg-white transition-all duration-200 group shadow-lg border border-white/40 backdrop-blur-sm"
+    >
+      <div className="mx-auto mb-3 h-16 w-16 rounded-lg bg-white shadow-sm ring-1 ring-valasys-gray-200 flex items-center justify-center overflow-hidden group-hover:ring-valasys-orange/40">
+        <img
+          src={p.logo}
+          alt={p.name}
+          className="max-h-12 max-w-12 object-contain"
+          onError={(e) => {
+            (e.currentTarget as HTMLImageElement).style.display = "none";
+            (e.currentTarget.parentElement as HTMLElement).innerHTML =
+              `<div class='h-full w-full ${p.fallbackBg} rounded-lg flex items-center justify-center text-white text-base font-bold'>${p.name
+                .split(" ")
+                .map((w) => w[0])
+                .join("")}</div>`;
+          }}
+        />
+      </div>
+      <div className="font-semibold text-valasys-gray-900 text-sm group-hover:text-valasys-orange transition-colors">
+        {p.name}
+      </div>
+      <div className="text-xs text-valasys-gray-600">{p.tagline}</div>
+    </div>
+  );
+
   return (
-    <div className="grid grid-cols-4 gap-4">
-      {partners.map((p) => (
-        <div
-          key={p.name}
-          className="bg-white/90 rounded-2xl p-5 text-center hover:bg-white transition-all duration-200 group shadow-lg border border-white/40 backdrop-blur-sm"
-        >
-          <div className="mx-auto mb-3 h-16 w-16 rounded-lg bg-white shadow-sm ring-1 ring-valasys-gray-200 flex items-center justify-center overflow-hidden group-hover:ring-valasys-orange/40">
-            <img
-              src={p.logo}
-              alt={p.name}
-              className="max-h-12 max-w-12 object-contain"
-              onError={(e) => {
-                (e.currentTarget as HTMLImageElement).style.display = "none";
-                (e.currentTarget.parentElement as HTMLElement).innerHTML =
-                  `<div class='h-full w-full ${p.fallbackBg} rounded-lg flex items-center justify-center text-white text-base font-bold'>${p.name
-                    .split(" ")
-                    .map((w) => w[0])
-                    .join("")}</div>`;
-              }}
-            />
-          </div>
-          <div className="font-semibold text-valasys-gray-900 text-sm group-hover:text-valasys-orange transition-colors">
-            {p.name}
-          </div>
-          <div className="text-xs text-valasys-gray-600">{p.tagline}</div>
+    <div className="space-y-6">
+      <div>
+        <h3 className="text-center text-sm font-semibold text-valasys-gray-900 mb-4">
+          In Association With
+        </h3>
+        <div className="grid grid-cols-2 gap-4">
+          {associationPartners.map((p) => (
+            <PartnerBox key={p.name} p={p} />
+          ))}
         </div>
-      ))}
+      </div>
+
+      <div>
+        <h3 className="text-center text-sm font-semibold text-valasys-gray-900 mb-4">
+          ISO Certification
+        </h3>
+        <div className="grid grid-cols-2 gap-4">
+          {isoCertifications.map((p) => (
+            <PartnerBox key={p.name} p={p} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
