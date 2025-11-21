@@ -66,27 +66,27 @@ export default function AssociationPartners() {
   );
 
   return (
-    <div className="space-y-6">
-      <div>
-        <h3 className="text-center text-sm font-semibold text-valasys-gray-900 mb-4">
-          In Association With
-        </h3>
-        <div className="grid grid-cols-2 gap-4">
-          {associationPartners.map((p) => (
-            <PartnerBox key={p.name} p={p} />
-          ))}
+    <div className="space-y-3">
+      <div className="grid grid-cols-4 gap-4">
+        <div className="col-span-2">
+          <h3 className="text-center text-sm font-semibold text-valasys-gray-900 mb-3">
+            In Association With
+          </h3>
+        </div>
+        <div className="col-span-2">
+          <h3 className="text-center text-sm font-semibold text-valasys-gray-900 mb-3">
+            ISO Certification
+          </h3>
         </div>
       </div>
 
-      <div>
-        <h3 className="text-center text-sm font-semibold text-valasys-gray-900 mb-4">
-          ISO Certification
-        </h3>
-        <div className="grid grid-cols-2 gap-4">
-          {isoCertifications.map((p) => (
-            <PartnerBox key={p.name} p={p} />
-          ))}
-        </div>
+      <div className="grid grid-cols-4 gap-4">
+        {associationPartners.map((p) => (
+          <PartnerBox key={p.name} p={p} />
+        ))}
+        {isoCertifications.map((p) => (
+          <PartnerBox key={p.name} p={p} />
+        ))}
       </div>
     </div>
   );
