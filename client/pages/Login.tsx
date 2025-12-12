@@ -554,7 +554,7 @@ export default function Login() {
               {/* Account signup text - moved inside card */}
               <div className="text-center pt-4">
                 <p
-                  className="text-green-700"
+                  className="text-slate-700"
                   style={{ fontSize: "16px" }}
                 >
                   Don't have an account?{" "}
