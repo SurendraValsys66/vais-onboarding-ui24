@@ -638,11 +638,11 @@ export default function Login() {
             className={`space-y-4 transform transition-all duration-700 ease-out ${mounted ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"}`}
           >
             <div className="text-center space-y-2">
-              <h2 className="text-2xl font-bold text-valasys-gray-900 flex items-center justify-center space-x-2">
-                <Play className="h-6 w-6 text-valasys-orange" />
+              <h2 className="text-2xl font-bold text-green-900 flex items-center justify-center space-x-2">
+                <Play className="h-6 w-6 text-red-600" />
                 <span>See VAIS in Action</span>
               </h2>
-              <p className="text-valasys-gray-600">
+              <p className="text-green-700">
                 Watch how AI transforms your sales process
               </p>
             </div>
