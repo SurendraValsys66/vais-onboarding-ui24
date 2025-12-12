@@ -178,7 +178,7 @@ export default function Login() {
 
   if (show2FA) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-green-50 via-white to-red-50/20 flex items-center justify-center p-4 relative overflow-hidden">
+      <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-red-50/10 flex items-center justify-center p-4 relative overflow-hidden">
         {/* Christmas header images */}
         <div className="absolute top-0 left-0 w-48 h-48 pointer-events-none z-5">
           <img
@@ -206,15 +206,15 @@ export default function Login() {
                 left: element.left,
                 right: element.right,
                 animationDelay: element.delay,
-                backgroundColor: index % 2 === 0 ? 'rgba(220, 38, 38, 0.3)' : 'rgba(22, 163, 74, 0.3)'
+                backgroundColor: index % 2 === 0 ? 'rgba(220, 38, 38, 0.2)' : 'rgba(100, 116, 139, 0.15)'
               }}
             />
           ))}
         </div>
 
         {/* 2FA Card */}
-        <Card className="w-full max-w-md border-green-200 shadow-xl bg-white/95 backdrop-blur-sm relative z-10">
-          <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-red-500 via-green-500 to-red-500"></div>
+        <Card className="w-full max-w-md border-slate-200 shadow-xl bg-white/95 backdrop-blur-sm relative z-10">
+          <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-red-500 via-red-400 to-red-500"></div>
           <CardHeader className="text-center space-y-4">
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2F76d83d63beb8455692b1855a78aa9524%2F5ee47be8ea214f9c9b220b553ddb9ad1?format=webp&width=800"
@@ -222,10 +222,10 @@ export default function Login() {
               className="mx-auto h-16 w-auto object-contain"
             />
             <div>
-              <CardTitle className="text-xl font-semibold text-green-800">
+              <CardTitle className="text-xl font-semibold text-slate-900">
                 🎄 Two-Factor Authentication
               </CardTitle>
-              <p className="text-green-700 text-sm mt-2">
+              <p className="text-slate-700 text-sm mt-2">
                 Enter the 6-digit verification code sent to your device
               </p>
             </div>
@@ -233,7 +233,7 @@ export default function Login() {
           <CardContent className="space-y-6">
             <form onSubmit={handleVerify2FA} className="space-y-4">
               <div className="space-y-2">
-                <Label className="text-green-700">
+                <Label className="text-slate-700">
                   Verification Code
                 </Label>
                 <div className="flex justify-center">
@@ -246,27 +246,27 @@ export default function Login() {
                     <InputOTPGroup>
                       <InputOTPSlot
                         index={0}
-                        className="border-green-200 focus:border-red-500 focus:ring-red-500/20"
+                        className="border-slate-200 focus:border-red-500 focus:ring-red-500/20"
                       />
                       <InputOTPSlot
                         index={1}
-                        className="border-green-200 focus:border-red-500 focus:ring-red-500/20"
+                        className="border-slate-200 focus:border-red-500 focus:ring-red-500/20"
                       />
                       <InputOTPSlot
                         index={2}
-                        className="border-green-200 focus:border-red-500 focus:ring-red-500/20"
+                        className="border-slate-200 focus:border-red-500 focus:ring-red-500/20"
                       />
                       <InputOTPSlot
                         index={3}
-                        className="border-green-200 focus:border-red-500 focus:ring-red-500/20"
+                        className="border-slate-200 focus:border-red-500 focus:ring-red-500/20"
                       />
                       <InputOTPSlot
                         index={4}
-                        className="border-green-200 focus:border-red-500 focus:ring-red-500/20"
+                        className="border-slate-200 focus:border-red-500 focus:ring-red-500/20"
                       />
                       <InputOTPSlot
                         index={5}
-                        className="border-green-200 focus:border-red-500 focus:ring-red-500/20"
+                        className="border-slate-200 focus:border-red-500 focus:ring-red-500/20"
                       />
                     </InputOTPGroup>
                   </InputOTP>
@@ -315,7 +315,7 @@ export default function Login() {
 
             <button
               onClick={() => setShow2FA(false)}
-              className="w-full text-sm text-green-700 hover:text-green-800 transition-colors"
+              className="w-full text-sm text-slate-700 hover:text-slate-800 transition-colors"
             >
               ← Back to login
             </button>
