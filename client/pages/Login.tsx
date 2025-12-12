@@ -601,10 +601,10 @@ export default function Login() {
                   <Brain className="w-4 h-4" />
                 </div>
                 <div>
-                  <div className="font-semibold text-green-900">
+                  <div className="font-semibold text-slate-900">
                     AI-Powered Insights
                   </div>
-                  <p className="text-xs text-green-700">
+                  <p className="text-xs text-slate-700">
                     Advanced algorithms that deliver actionable intelligence
                   </p>
                 </div>
