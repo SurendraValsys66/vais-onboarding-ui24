@@ -592,40 +592,40 @@ export default function Login() {
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <div className="w-8 h-8 rounded-lg border border-valasys-orange text-valasys-orange flex items-center justify-center shadow-sm">
+                <div className="w-8 h-8 rounded-lg border border-red-600 text-red-600 flex items-center justify-center shadow-sm">
                   <TrendingUp className="w-4 h-4" />
                 </div>
                 <div>
-                  <div className="font-semibold text-valasys-gray-900">
+                  <div className="font-semibold text-green-900">
                     Scoring System
                   </div>
-                  <p className="text-xs text-valasys-gray-600">
+                  <p className="text-xs text-green-700">
                     AI-driven lead and account ranking.
                   </p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <div className="w-8 h-8 rounded-lg border border-valasys-orange text-valasys-orange flex items-center justify-center shadow-sm">
+                <div className="w-8 h-8 rounded-lg border border-red-600 text-red-600 flex items-center justify-center shadow-sm">
                   <Megaphone className="w-4 h-4" />
                 </div>
                 <div>
-                  <div className="font-semibold text-valasys-gray-900">
+                  <div className="font-semibold text-green-900">
                     Campaign Management
                   </div>
-                  <p className="text-xs text-valasys-gray-600">
+                  <p className="text-xs text-green-700">
                     Campaign tracking with reports and insights.
                   </p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <div className="w-8 h-8 rounded-lg border border-valasys-orange text-valasys-orange flex items-center justify-center shadow-sm">
+                <div className="w-8 h-8 rounded-lg border border-red-600 text-red-600 flex items-center justify-center shadow-sm">
                   <Activity className="w-4 h-4" />
                 </div>
                 <div>
-                  <div className="font-semibold text-valasys-gray-900">
+                  <div className="font-semibold text-green-900">
                     Real-time Analytics
                   </div>
-                  <p className="text-xs text-valasys-gray-600">
+                  <p className="text-xs text-green-700">
                     Live data processing and instant reporting
                   </p>
                 </div>
