@@ -438,7 +438,7 @@ export default function Login() {
                 <div className="space-y-2">
                   <Label
                     htmlFor="email"
-                    className="text-green-700 flex items-center space-x-1"
+                    className="text-slate-700 flex items-center space-x-1"
                   >
                     <Mail className="h-3 w-3" />
                     <span>Email Address</span>
@@ -455,7 +455,7 @@ export default function Login() {
                       onChange={(e) => setEmail(e.target.value)}
                       onFocus={() => setFocusedField("email")}
                       onBlur={() => setFocusedField(null)}
-                      className="pl-10 border-green-200 focus:border-red-500 focus:ring-red-500/20 transition-all duration-200"
+                      className="pl-10 border-slate-200 focus:border-red-500 focus:ring-red-500/20 transition-all duration-200"
                       required
                     />
                   </div>
