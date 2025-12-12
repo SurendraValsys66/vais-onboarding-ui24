@@ -502,12 +502,12 @@ export default function Login() {
                 </div>
 
                 {/* Google reCAPTCHA Placeholder */}
-                <div className="bg-valasys-gray-50 border border-valasys-gray-200 rounded-lg p-4 text-center">
-                  <div className="flex items-center justify-center space-x-2 text-valasys-gray-600">
+                <div className="bg-green-50 border border-green-200 rounded-lg p-4 text-center">
+                  <div className="flex items-center justify-center space-x-2 text-green-700">
                     <Shield className="h-4 w-4" />
                     <span className="text-sm">reCAPTCHA verification</span>
                   </div>
-                  <p className="text-xs text-valasys-gray-500 mt-1">
+                  <p className="text-xs text-green-600 mt-1">
                     Protected by Google reCAPTCHA
                   </p>
                 </div>
@@ -516,7 +516,7 @@ export default function Login() {
                 <Button
                   type="submit"
                   disabled={isLoading}
-                  className="w-full bg-valasys-orange hover:bg-valasys-orange-light text-white font-medium py-3 shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-102"
+                  className="w-full bg-red-600 hover:bg-red-700 text-white font-medium py-3 shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-102"
                 >
                   {isLoading ? (
                     <div className="flex items-center space-x-2">
