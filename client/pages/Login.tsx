@@ -587,10 +587,10 @@ export default function Login() {
             className={`space-y-4 transform transition-all duration-700 ease-out ${mounted ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"}`}
             style={{ transitionDelay: "150ms" }}
           >
-            <h2 className="text-2xl font-bold text-green-900">
+            <h2 className="text-2xl font-bold text-slate-900">
               Welcome back to <span className="text-red-600">VAIS</span>
             </h2>
-            <p className="text-green-700">
+            <p className="text-slate-700">
               Access your AI-powered scoring platform to unlock deeper insights,
               accelerate decision-making, and drive meaningful business
               outcomes.
