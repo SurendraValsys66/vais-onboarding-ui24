@@ -465,7 +465,7 @@ export default function Login() {
                 <div className="space-y-2">
                   <Label
                     htmlFor="password"
-                    className="text-green-700 flex items-center space-x-1"
+                    className="text-slate-700 flex items-center space-x-1"
                   >
                     <Lock className="h-3 w-3" />
                     <span>Password</span>
@@ -482,7 +482,7 @@ export default function Login() {
                       onChange={(e) => setPassword(e.target.value)}
                       onFocus={() => setFocusedField("password")}
                       onBlur={() => setFocusedField(null)}
-                      className="pl-10 pr-10 border-green-200 focus:border-red-500 focus:ring-red-500/20 transition-all duration-200"
+                      className="pl-10 pr-10 border-slate-200 focus:border-red-500 focus:ring-red-500/20 transition-all duration-200"
                       required
                     />
                     <button
