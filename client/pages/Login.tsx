@@ -566,7 +566,6 @@ export default function Login() {
               </div>
             </CardContent>
           </Card>
-
         </div>
       </div>
 
@@ -629,7 +628,6 @@ export default function Login() {
               </div>
               <AssociationPartners />
             </div>
-
           </div>
 
           {/* Trust Badges */}
