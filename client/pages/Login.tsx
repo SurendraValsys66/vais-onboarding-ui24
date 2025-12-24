@@ -648,14 +648,14 @@ export default function Login() {
                   Connect seamlessly with your existing tech stack
                 </p>
               </div>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-3">
                 {integrations.map((integration, index) => (
                   <div
                     key={index}
-                    className={`bg-white/80 backdrop-blur-sm rounded-xl p-4 text-center hover:bg-white/90 transition-all duration-300 group cursor-pointer hover:scale-105 transform shadow-lg border border-white/30 ${mounted ? "scale-100 opacity-100" : "scale-95 opacity-0"}`}
+                    className={`bg-white/80 backdrop-blur-sm rounded-lg p-3 text-center hover:bg-white/90 transition-all duration-300 group cursor-pointer hover:scale-105 transform shadow-md border border-white/30 ${mounted ? "scale-100 opacity-100" : "scale-95 opacity-0"}`}
                     style={{ transitionDelay: `${400 + index * 100}ms` }}
                   >
-                    <div className="h-10 w-10 mx-auto mb-3 bg-white rounded-lg p-2 group-hover:scale-110 group-hover:rotate-3 transition-all duration-200 shadow-md">
+                    <div className="h-9 w-9 mx-auto mb-2 bg-white rounded-lg p-2 group-hover:scale-110 group-hover:rotate-3 transition-all duration-200 shadow-sm">
                       <img
                         src={integration.logo}
                         alt={integration.name}
