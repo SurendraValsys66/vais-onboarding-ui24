@@ -666,10 +666,10 @@ export default function Login() {
                         }}
                       />
                     </div>
-                    <h4 className="font-semibold text-slate-900 text-sm group-hover:text-red-600 transition-colors duration-200">
+                    <h4 className="font-semibold text-slate-900 text-xs group-hover:text-red-600 transition-colors duration-200">
                       {integration.name}
                     </h4>
-                    <p className="text-xs text-slate-700 group-hover:text-slate-900 transition-colors duration-200">
+                    <p className="text-[10px] text-slate-700 group-hover:text-slate-900 transition-colors duration-200">
                       {integration.description}
                     </p>
                   </div>
