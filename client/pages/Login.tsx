@@ -567,10 +567,6 @@ export default function Login() {
             </CardContent>
           </Card>
 
-          {/* Powered by 50+ Integrations (below form) */}
-          <div className="pt-4">
-            <IntegrationsFooter />
-          </div>
         </div>
       </div>
 
