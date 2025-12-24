@@ -630,48 +630,6 @@ export default function Login() {
               <AssociationPartners />
             </div>
 
-            {/* Integrations */}
-            <div className="space-y-2">
-              <div className="text-center space-y-1">
-                <h3 className="text-lg font-semibold text-slate-900 flex items-center justify-center space-x-2">
-                  <Globe
-                    className="h-5 w-5 text-red-600 animate-spin"
-                    style={{ animationDuration: "6s" }}
-                  />
-                  <span>Powered by 50+ Integrations</span>
-                </h3>
-                <p className="text-slate-700 text-xs">
-                  Connect seamlessly with your existing tech stack
-                </p>
-              </div>
-              <div className="grid grid-cols-2 gap-3">
-                {integrations.map((integration, index) => (
-                  <div
-                    key={index}
-                    className={`bg-white/80 backdrop-blur-sm rounded-lg p-3 text-center hover:bg-white/90 transition-all duration-300 group cursor-pointer hover:scale-105 transform shadow-md border border-white/30 ${mounted ? "scale-100 opacity-100" : "scale-95 opacity-0"}`}
-                    style={{ transitionDelay: `${400 + index * 100}ms` }}
-                  >
-                    <div className="h-9 w-9 mx-auto mb-2 bg-white rounded-lg p-2 group-hover:scale-110 group-hover:rotate-3 transition-all duration-200 shadow-sm">
-                      <img
-                        src={integration.logo}
-                        alt={integration.name}
-                        className="w-full h-full object-contain"
-                        onError={(e) => {
-                          e.currentTarget.style.display = "none";
-                          e.currentTarget.parentElement!.innerHTML = `<div class=\"w-full h-full ${integration.color} rounded flex items-center justify-center text-white text-xs font-bold\">${integration.name[0]}</div>`;
-                        }}
-                      />
-                    </div>
-                    <h4 className="font-semibold text-slate-900 text-xs group-hover:text-red-600 transition-colors duration-200">
-                      {integration.name}
-                    </h4>
-                    <p className="text-[10px] text-slate-700 group-hover:text-slate-900 transition-colors duration-200">
-                      {integration.description}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
           </div>
 
           {/* Trust Badges */}
