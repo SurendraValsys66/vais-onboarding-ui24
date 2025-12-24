@@ -615,12 +615,12 @@ export default function Login() {
             </div>
           </div>
 
-          {/* Integrations + Association Section (side-by-side) */}
+          {/* Integrations + Association Section (stacked) */}
           <div
-            className={`grid grid-cols-2 gap-8 transform transition-all duration-700 ease-out ${mounted ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"}`}
+            className={`space-y-8 transform transition-all duration-700 ease-out ${mounted ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"}`}
             style={{ transitionDelay: "300ms" }}
           >
-            {/* Left: In Association With */}
+            {/* In Association With */}
             <div className="space-y-4">
               <div className="text-center space-y-2">
                 <h3 className="text-xl font-semibold text-slate-900 flex items-center justify-center space-x-2">
@@ -634,7 +634,7 @@ export default function Login() {
               <AssociationPartners />
             </div>
 
-            {/* Right: Integrations */}
+            {/* Integrations */}
             <div className="space-y-4">
               <div className="text-center space-y-2">
                 <h3 className="text-xl font-semibold text-slate-900 flex items-center justify-center space-x-2">
