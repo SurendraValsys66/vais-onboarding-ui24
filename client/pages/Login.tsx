@@ -635,9 +635,9 @@ export default function Login() {
             </div>
 
             {/* Integrations */}
-            <div className="space-y-4">
-              <div className="text-center space-y-2">
-                <h3 className="text-xl font-semibold text-slate-900 flex items-center justify-center space-x-2">
+            <div className="space-y-2">
+              <div className="text-center space-y-1">
+                <h3 className="text-lg font-semibold text-slate-900 flex items-center justify-center space-x-2">
                   <Globe
                     className="h-5 w-5 text-red-600 animate-spin"
                     style={{ animationDuration: "6s" }}
