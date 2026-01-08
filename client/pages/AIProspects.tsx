@@ -12,20 +12,10 @@ export default function AIProspects() {
         {/* Main Content Area - No scrollbar */}
         <div className="w-full overflow-hidden flex flex-col">
           <div className="w-full max-w-4xl mx-auto px-8 py-6 flex flex-col h-full">
-            {/* Header Section with Gradient Blob */}
-            <div className="relative mb-4 flex-shrink-0">
-              {/* Gradient Blob */}
-              <div
-                className="absolute w-32 h-32 rounded-full blur-3xl opacity-40 pointer-events-none"
-                style={{
-                  background: "linear-gradient(135deg, #FF6B9D 0%, #E65D9F 100%)",
-                  top: "-10px",
-                  right: "-30px",
-                }}
-              />
-
+            {/* Header Section */}
+            <div className="mb-6 flex-shrink-0">
               {/* Main Heading */}
-              <div className="relative z-10">
+              <div>
                 <h1 className="text-3xl font-bold text-valasys-gray-900 mb-1 text-center leading-tight">
                   Find your next prospects faster
                 </h1>
