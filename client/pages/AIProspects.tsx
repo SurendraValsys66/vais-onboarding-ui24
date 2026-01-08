@@ -28,7 +28,7 @@ export default function AIProspects() {
             </div>
 
             {/* Search Bar Section */}
-            <div className="mb-4 flex-shrink-0">
+            <div className="flex-shrink-0">
               <div className="relative">
                 <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-valasys-gray-400" />
                 <Input
@@ -43,64 +43,6 @@ export default function AIProspects() {
                 </div>
               </div>
             </div>
-
-            {/* Tabs Section */}
-            <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full flex-1 flex flex-col min-h-0">
-              <TabsList className="border-b border-valasys-gray-200 rounded-none bg-transparent p-0 h-auto w-full justify-start gap-6 flex-shrink-0">
-                <TabsTrigger
-                  value="saved"
-                  className="rounded-none border-b-2 border-transparent px-0 py-2 font-medium text-xs text-valasys-gray-600 hover:text-valasys-gray-900 data-[state=active]:border-b-2 data-[state=active]:border-valasys-orange data-[state=active]:text-valasys-gray-900 transition-colors"
-                >
-                  <span className="flex items-center gap-1">
-                    <div className="w-3 h-3 flex items-center justify-center">
-                      <span className="text-xs">★</span>
-                    </div>
-                    Saved searches
-                  </span>
-                </TabsTrigger>
-                <TabsTrigger
-                  value="recent"
-                  className="rounded-none border-b-2 border-transparent px-0 py-2 font-medium text-xs text-valasys-gray-600 hover:text-valasys-gray-900 data-[state=active]:border-b-2 data-[state=active]:border-valasys-orange data-[state=active]:text-valasys-gray-900 transition-colors"
-                >
-                  <span className="flex items-center gap-1">
-                    <RotateCcw className="w-3 h-3" />
-                    Recent searches
-                  </span>
-                </TabsTrigger>
-              </TabsList>
-
-              {/* Saved Searches Tab */}
-              <TabsContent value="saved" className="mt-3 flex-1 flex items-center justify-center">
-                <p className="text-valasys-gray-500 text-sm">No saved searches yet</p>
-              </TabsContent>
-
-              {/* Recent Searches Tab */}
-              <TabsContent value="recent" className="mt-3 flex-1 overflow-hidden flex flex-col">
-                <div className="space-y-2 flex-1 overflow-hidden">
-                  {recentSearches.slice(0, 3).map((search) => (
-                    <button
-                      key={search.id}
-                      className="w-full p-3 rounded-lg border border-valasys-gray-200 hover:border-valasys-orange hover:bg-valasys-gray-50 transition-all text-left group text-sm"
-                    >
-                      <div className="flex items-start justify-between gap-2">
-                        <div className="flex-1 min-w-0">
-                          <p className="text-xs text-valasys-gray-900 font-medium leading-tight line-clamp-2">
-                            {search.query}
-                          </p>
-                          <p className="text-xs text-valasys-gray-500 mt-1">
-                            {search.date}, {search.time}
-                          </p>
-                        </div>
-                        <ArrowUpRight className="w-3.5 h-3.5 text-valasys-gray-400 group-hover:text-valasys-orange transition-colors flex-shrink-0" />
-                      </div>
-                    </button>
-                  ))}
-                </div>
-                <button className="w-full py-1.5 text-xs text-valasys-orange font-medium hover:text-orange-600 transition-colors flex-shrink-0 mt-2">
-                  Open details
-                </button>
-              </TabsContent>
-            </Tabs>
           </div>
         </div>
       </div>
