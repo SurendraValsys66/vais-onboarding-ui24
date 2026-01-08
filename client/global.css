@@ -99,6 +99,37 @@
 }
 
 @layer components {
+  /* Placeholder fade animations */
+  @keyframes fadeUpOut {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+  }
+
+  @keyframes fadeUpIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .placeholder-exit {
+    animation: fadeUpOut 0.5s ease-out forwards;
+  }
+
+  .placeholder-enter {
+    animation: fadeUpIn 0.5s ease-out forwards;
+  }
+
   /* Custom animations for charts */
   .chart-enter {
     animation: chartSlideIn 0.5s ease-out;
