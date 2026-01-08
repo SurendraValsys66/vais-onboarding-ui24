@@ -74,6 +74,7 @@ const App = () => (
               <Route path="/vais-results" element={<VAISResults />} />
               <Route path="/abm-lal" element={<ABMLAL />} />
               <Route path="/find-prospect" element={<FindProspect />} />
+              <Route path="/ai-prospects" element={<AIProspects />} />
               <Route path="/prospect-results" element={<ProspectResults />} />
               <Route path="/build-campaign" element={<BuildCampaign />} />
               <Route path="/build-my-campaign" element={<BuildMyCampaign />} />
