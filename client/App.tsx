@@ -43,6 +43,7 @@ import OnboardingIndustry from "./pages/OnboardingIndustry";
 import OnboardingCategory from "./pages/OnboardingCategory";
 import OnboardingThankYou from "./pages/OnboardingThankYou";
 import MasteryGuide from "./pages/MasteryGuide";
+import AIProspects from "./pages/AIProspects";
 
 const queryClient = new QueryClient();
 
@@ -73,6 +74,7 @@ const App = () => (
               <Route path="/vais-results" element={<VAISResults />} />
               <Route path="/abm-lal" element={<ABMLAL />} />
               <Route path="/find-prospect" element={<FindProspect />} />
+              <Route path="/ai-prospects" element={<AIProspects />} />
               <Route path="/prospect-results" element={<ProspectResults />} />
               <Route path="/build-campaign" element={<BuildCampaign />} />
               <Route path="/build-my-campaign" element={<BuildMyCampaign />} />

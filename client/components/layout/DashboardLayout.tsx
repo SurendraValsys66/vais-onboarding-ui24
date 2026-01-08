@@ -84,6 +84,12 @@ const coreNavigationItems = [
     tourId: "prospect-nav",
   },
   {
+    name: "AI Prospects",
+    href: "/ai-prospects",
+    icon: Search,
+    tourId: "ai-prospects-nav",
+  },
+  {
     name: "Build My Campaign",
     href: "/build-my-campaign",
     icon: Megaphone,
