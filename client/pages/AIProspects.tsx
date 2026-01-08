@@ -48,7 +48,7 @@ export default function AIProspects() {
             <div className="relative">
               <Search className="absolute left-4 top-3 w-4 h-4 text-valasys-gray-400" />
               <Textarea
-                placeholder="Marketing specialists in Canada with Google Ads experience"
+                placeholder={PLACEHOLDERS[placeholderIndex]}
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 rows={4}
