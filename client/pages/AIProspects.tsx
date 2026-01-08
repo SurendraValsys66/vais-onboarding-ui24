@@ -36,10 +36,14 @@ export default function AIProspects() {
               </h1>
               <p className="text-3xl font-bold text-valasys-gray-600 text-center">
                 with the{" "}
-                <span className="font-bold text-valasys-orange">
+                <span
+                  className="font-bold bg-clip-text text-transparent"
+                  style={{
+                    backgroundImage: "linear-gradient(90deg, #d33efb, #6e38cf)",
+                  }}
+                >
                   power of AI
                 </span>
-                <Zap className="inline ml-1 w-5 h-5 text-valasys-orange stroke-2" />
               </p>
             </div>
           </div>
