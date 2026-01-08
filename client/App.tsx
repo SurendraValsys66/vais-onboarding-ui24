@@ -43,6 +43,7 @@ import OnboardingIndustry from "./pages/OnboardingIndustry";
 import OnboardingCategory from "./pages/OnboardingCategory";
 import OnboardingThankYou from "./pages/OnboardingThankYou";
 import MasteryGuide from "./pages/MasteryGuide";
+import AIProspects from "./pages/AIProspects";
 
 const queryClient = new QueryClient();
 
