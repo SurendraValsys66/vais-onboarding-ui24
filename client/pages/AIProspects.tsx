@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Zap, Search, Sparkle, ArrowRight } from "lucide-react";
+import { Search, Sparkle, ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import DashboardLayout from "@/components/layout/DashboardLayout";
 import { Textarea } from "@/components/ui/textarea";
