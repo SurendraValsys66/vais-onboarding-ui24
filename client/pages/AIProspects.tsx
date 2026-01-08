@@ -10,10 +10,10 @@ export default function AIProspects() {
     <DashboardLayout>
       <div className="flex h-screen overflow-hidden bg-white">
         {/* Main Content Area - No scrollbar */}
-        <div className="w-full overflow-hidden flex flex-col">
-          <div className="w-full max-w-4xl mx-auto px-8 py-6 flex flex-col h-full">
+        <div className="w-full overflow-hidden flex flex-col items-center justify-center">
+          <div className="w-full max-w-4xl mx-auto px-8">
             {/* Header Section */}
-            <div className="mb-6 flex-shrink-0">
+            <div className="mb-6">
               {/* Main Heading */}
               <div>
                 <h1 className="text-3xl font-bold text-valasys-gray-900 mb-1 text-center leading-tight">
@@ -28,7 +28,7 @@ export default function AIProspects() {
             </div>
 
             {/* Search Bar Section */}
-            <div className="flex-shrink-0">
+            <div>
               <div className="relative">
                 <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-valasys-gray-400" />
                 <Input
