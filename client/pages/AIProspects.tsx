@@ -208,8 +208,8 @@ export default function AIProspects() {
         </div>
 
         {/* Main Content Area */}
-        <div className="flex-1 overflow-y-auto">
-          <div className="w-full max-w-3xl mx-auto px-8 py-12">
+        <div className="flex-1 overflow-hidden">
+          <div className="w-full h-full max-w-3xl mx-auto px-8 py-12 flex flex-col overflow-y-auto scrollbar-hide">
             {/* Header Section with Gradient Blob */}
             <div className="relative mb-12">
               {/* Gradient Blob */}
