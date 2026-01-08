@@ -48,11 +48,12 @@ export default function AIProspects() {
             <div className="relative">
               <Search className="absolute left-4 top-3 w-4 h-4 text-valasys-gray-400" />
               <Textarea
+                key={placeholderIndex}
                 placeholder={PLACEHOLDERS[placeholderIndex]}
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 rows={4}
-                className="w-full pl-10 pr-20 py-2 text-sm border border-valasys-gray-300 rounded-lg placeholder:text-valasys-gray-400 focus:outline-none focus:ring-2 focus:ring-valasys-orange focus:border-transparent resize-none"
+                className="w-full pl-10 pr-20 py-2 text-sm border border-valasys-gray-300 rounded-lg placeholder:text-valasys-gray-400 focus:outline-none focus:ring-2 focus:ring-valasys-orange focus:border-transparent resize-none animate-in fade-in-0 duration-500"
               />
               <div className="absolute right-3 bottom-3 flex items-center gap-1.5">
                 <Sparkle className="w-4 h-4 text-valasys-orange fill-valasys-orange" />
