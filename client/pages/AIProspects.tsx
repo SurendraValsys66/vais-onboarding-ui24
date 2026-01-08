@@ -8,8 +8,8 @@ export default function AIProspects() {
 
   return (
     <DashboardLayout>
-      <div className="w-full h-screen overflow-hidden bg-white flex items-center justify-center">
-        <div className="w-full max-w-4xl mx-auto px-8">
+      <div className="w-full h-full overflow-hidden bg-white flex items-center justify-center">
+        <div className="w-full max-w-2xl mx-auto px-6">
             {/* Header Section */}
             <div className="mb-6">
               {/* Main Heading */}
