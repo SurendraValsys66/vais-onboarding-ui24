@@ -11,14 +11,31 @@ const PLACEHOLDERS = [
   "Engineers in Finland within the renewable energy sector",
 ];
 
+const AI_PHRASES = [
+  "power of AI",
+  "the intelligence of AI",
+  "AI-driven insights",
+  "AI-powered discovery",
+  "next-gen AI",
+];
+
 export default function AIProspects() {
   const [searchQuery, setSearchQuery] = useState("");
   const [placeholderIndex, setPlaceholderIndex] = useState(0);
+  const [aiPhraseIndex, setAiPhraseIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setPlaceholderIndex((prev) => (prev + 1) % PLACEHOLDERS.length);
     }, 2000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setAiPhraseIndex((prev) => (prev + 1) % AI_PHRASES.length);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
