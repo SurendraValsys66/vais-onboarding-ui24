@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Zap, Search } from "lucide-react";
 import DashboardLayout from "@/components/layout/DashboardLayout";
-import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 
 export default function AIProspects() {
   const [searchQuery, setSearchQuery] = useState("");
