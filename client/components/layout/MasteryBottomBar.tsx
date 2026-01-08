@@ -301,10 +301,6 @@ export default function MasteryBottomBar() {
     [],
   );
 
-  if (hidden && !showDismissDialog && !showFinalDialog) {
-    return null;
-  }
-
   useEffect(() => {
     try {
       const openOnce =
@@ -319,6 +315,10 @@ export default function MasteryBottomBar() {
       }
     } catch {}
   }, []);
+
+  if (hidden && !showDismissDialog && !showFinalDialog) {
+    return null;
+  }
 
   const shouldShowPanel = !hidden && !doneAll;
 
