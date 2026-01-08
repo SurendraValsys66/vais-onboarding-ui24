@@ -17,10 +17,10 @@ export default function AIProspects() {
                 <h1 className="text-3xl font-bold text-valasys-gray-900 mb-1 text-center leading-tight">
                   Find your next prospects faster
                 </h1>
-                <p className="text-base text-valasys-gray-600 text-center">
+                <p className="text-3xl font-bold text-valasys-gray-600 text-center">
                   with the{" "}
-                  <span className="font-semibold text-valasys-orange">power of AI</span>
-                  <Zap className="inline ml-1 w-4 h-4 text-valasys-orange stroke-2" />
+                  <span className="font-bold text-valasys-orange">power of AI</span>
+                  <Zap className="inline ml-1 w-5 h-5 text-valasys-orange stroke-2" />
                 </p>
               </div>
             </div>
