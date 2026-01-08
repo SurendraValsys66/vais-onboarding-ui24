@@ -44,6 +44,23 @@ export default function AIProspects() {
     <DashboardLayout>
       <div className="w-full h-full overflow-hidden bg-white flex items-center justify-center">
         <div className="w-full max-w-2xl mx-auto px-6">
+          {/* Video Section */}
+          <div className="mb-8 flex justify-center">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full max-w-xs rounded-lg"
+            >
+              <source
+                src="https://cdn.builder.io/o/assets%2F653b8e5d19bc41ddad7375ad6a55d878%2Fdc299ed4703d4e9a9d594d08a4710e88?alt=media&token=ca39ced4-286c-4bab-a11d-1a9ef3f888e5&apiKey=653b8e5d19bc41ddad7375ad6a55d878"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
           {/* Header Section */}
           <div className="mb-6">
             {/* Main Heading */}
