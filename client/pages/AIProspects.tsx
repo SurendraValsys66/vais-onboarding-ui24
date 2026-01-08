@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-import { ChevronRight, Zap, RotateCcw, ArrowUpRight, Search, X } from "lucide-react";
+import { Zap, RotateCcw, ArrowUpRight, Search } from "lucide-react";
 import DashboardLayout from "@/components/layout/DashboardLayout";
-import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { cn } from "@/lib/utils";
 
 interface RecentSearch {
   id: string;
@@ -12,49 +10,6 @@ interface RecentSearch {
   date: string;
   time: string;
 }
-
-const FilterSection = ({
-  title,
-  items,
-}: {
-  title: string;
-  items: string[];
-}) => {
-  const [expanded, setExpanded] = useState(true);
-
-  return (
-    <div className="mb-6 border-b border-valasys-gray-200 pb-4">
-      <button
-        onClick={() => setExpanded(!expanded)}
-        className="flex items-center justify-between w-full mb-3 group"
-      >
-        <h3 className="text-sm font-medium text-valasys-gray-700 flex items-center">
-          {title}
-        </h3>
-        <ChevronRight
-          className={cn(
-            "w-4 h-4 text-valasys-gray-400 transition-transform duration-200",
-            expanded && "rotate-90"
-          )}
-        />
-      </button>
-
-      {expanded && (
-        <div className="space-y-2 ml-0">
-          {items.map((item) => (
-            <label key={item} className="flex items-center gap-2 cursor-pointer group">
-              <input
-                type="checkbox"
-                className="w-4 h-4 rounded border border-valasys-gray-300 text-valasys-orange cursor-pointer"
-              />
-              <span className="text-sm text-valasys-gray-600">{item}</span>
-            </label>
-          ))}
-        </div>
-      )}
-    </div>
-  );
-};
 
 export default function AIProspects() {
   const [searchQuery, setSearchQuery] = useState("");
