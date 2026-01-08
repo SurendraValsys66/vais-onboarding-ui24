@@ -177,38 +177,8 @@ export default function AIProspects() {
   return (
     <DashboardLayout>
       <div className="flex h-screen overflow-hidden bg-white">
-        {/* Left Sidebar - Filters */}
-        <div className="w-56 border-r border-valasys-gray-200 overflow-y-auto bg-valasys-gray-50 flex flex-col">
-          <div className="p-4 flex-1 overflow-y-auto">
-            {/* Search Filters Header */}
-            <div className="mb-6">
-              <h2 className="text-xs font-semibold text-valasys-gray-500 uppercase tracking-wider">
-                Search filters
-              </h2>
-            </div>
-
-            {/* Filter Sections */}
-            {filterSections.map((section) => (
-              <FilterSection key={section.title} title={section.title} items={section.items} />
-            ))}
-          </div>
-
-          {/* Action Buttons */}
-          <div className="p-4 border-t border-valasys-gray-200 bg-white flex gap-2">
-            <Button className="flex-1 bg-valasys-orange hover:bg-orange-600 text-white rounded-lg h-9 text-sm font-medium transition-colors">
-              Search
-            </Button>
-            <Button
-              variant="outline"
-              className="flex-1 h-9 text-sm font-medium border border-valasys-gray-300 text-valasys-gray-700 hover:bg-valasys-gray-50 rounded-lg"
-            >
-              Reset filters
-            </Button>
-          </div>
-        </div>
-
         {/* Main Content Area */}
-        <div className="flex-1 overflow-y-auto scrollbar-hidden">
+        <div className="w-full overflow-y-auto scrollbar-hidden">
           <div className="w-full max-w-3xl mx-auto px-8 py-12">
             {/* Header Section with Gradient Blob */}
             <div className="relative mb-12">
