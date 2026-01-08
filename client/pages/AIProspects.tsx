@@ -1,46 +1,10 @@
 import React, { useState } from "react";
-import { Zap, RotateCcw, ArrowUpRight, Search } from "lucide-react";
+import { Zap, Search } from "lucide-react";
 import DashboardLayout from "@/components/layout/DashboardLayout";
 import { Input } from "@/components/ui/input";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-
-interface RecentSearch {
-  id: string;
-  query: string;
-  date: string;
-  time: string;
-}
 
 export default function AIProspects() {
   const [searchQuery, setSearchQuery] = useState("");
-  const [activeTab, setActiveTab] = useState("recent");
-
-  const recentSearches: RecentSearch[] = [
-    {
-      id: "1",
-      query: "Marketing specialists in Canada with Google Ads experience",
-      date: "6 Jun 2025",
-      time: "11:58 AM",
-    },
-    {
-      id: "2",
-      query: "Product managers in United States",
-      date: "5 Jun 2025",
-      time: "11:58 AM",
-    },
-    {
-      id: "3",
-      query: "Sales directors in Europe",
-      date: "4 Jun 2025",
-      time: "11:58 AM",
-    },
-    {
-      id: "4",
-      query: "Engineering leaders in Bay Area",
-      date: "3 Jun 2025",
-      time: "11:58 AM",
-    },
-  ];
 
   return (
     <DashboardLayout>
