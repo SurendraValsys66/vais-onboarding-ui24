@@ -1,10 +1,26 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Zap, Search, Sparkle, ArrowRight } from "lucide-react";
 import DashboardLayout from "@/components/layout/DashboardLayout";
 import { Textarea } from "@/components/ui/textarea";
 
+const PLACEHOLDERS = [
+  "Marketing specialists in Canada with Google Ads experience",
+  "HR Directors in Europe at companies with 200–500 employees",
+  "CTOs in New York with cloud expertise",
+  "Engineers in Finland within the renewable energy sector",
+];
+
 export default function AIProspects() {
   const [searchQuery, setSearchQuery] = useState("");
+  const [placeholderIndex, setPlaceholderIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setPlaceholderIndex((prev) => (prev + 1) % PLACEHOLDERS.length);
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <DashboardLayout>
