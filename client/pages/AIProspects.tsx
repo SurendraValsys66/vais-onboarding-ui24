@@ -8,10 +8,8 @@ export default function AIProspects() {
 
   return (
     <DashboardLayout>
-      <div className="flex h-screen overflow-hidden bg-white">
-        {/* Main Content Area - No scrollbar */}
-        <div className="w-full overflow-hidden flex flex-col items-center justify-center">
-          <div className="w-full max-w-4xl mx-auto px-8">
+      <div className="w-full h-screen overflow-hidden bg-white flex items-center justify-center">
+        <div className="w-full max-w-4xl mx-auto px-8">
             {/* Header Section */}
             <div className="mb-6">
               {/* Main Heading */}
@@ -43,7 +41,6 @@ export default function AIProspects() {
                 </div>
               </div>
             </div>
-          </div>
         </div>
       </div>
     </DashboardLayout>
