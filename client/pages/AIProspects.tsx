@@ -66,7 +66,7 @@ export default function AIProspects() {
           <div className="mb-3">
             {/* Main Heading */}
             <div>
-              <h1 className="text-3xl font-bold text-valasys-gray-900 mb-1 text-center leading-tight">
+              <h1 className="text-3xl font-bold text-valasys-gray-900 mb-1 text-center leading-tight" style={{ marginTop: "-20px" }}>
                 Find your next prospects faster
               </h1>
               <p className="text-3xl font-bold text-valasys-gray-600 text-center">
